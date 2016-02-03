@@ -61,7 +61,7 @@ class HStoreParser
             $c = $this->charAfterSpaces($str, $p);
 
             // End of string.
-            if ($c === false) {
+            if ($p >= $len || $c === false) {
                 break;
             }
 
